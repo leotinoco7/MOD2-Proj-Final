@@ -65,6 +65,32 @@ const detalhes = (req, res) => {
   }
 };
 
+const getById = async (req, res) => {
+  try {
+    const method = req.params.method;
+    const series_ = await Series.findAll();
+    const serie = await Series.findByPk(req.params.id);
+
+    if (method == "put") {
+      res.render("home", {
+        series_,
+        seriePut: serie,
+        serieDel: null,
+      });
+    } else {
+      res.render("home", {
+        series_,
+        seriePut: null,
+        serieDel: serie,
+      });
+    }
+  } catch (err) {
+    res.status(500).send({ err: err.message });
+  }
+};
+
+const update = (req, res) => {};
+
 module.exports = {
   getAll,
   cadastro,
@@ -72,4 +98,6 @@ module.exports = {
   detalhes,
   login,
   acesso,
+  getById,
+  update,
 };
