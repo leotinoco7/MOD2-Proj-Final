@@ -3,23 +3,23 @@ const Series = require("../models/Series");
 
 const login = (req, res) => {
   try {
-    res.render("login");
+    res.render("index");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
 };
 
-const login_ = async (req, res) => {
+const acesso = async (req, res) => {
   try {
-    let usuario = req.body.usuario;
-    let senha = req.body.senha;
+    let username = req.body.username;
+    let password = req.body.password;
 
-    if (!login_) {
-      return res.redirect("/login");
+    if (!acesso) {
+      return res.redirect("/index");
     }
 
-    await Series.login_(usuario), await Series.login_(senha);
-    res.redirect("/");
+    await Series.acesso(username), await Series.acesso(password);
+    res.redirect("/home");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
@@ -28,7 +28,7 @@ const login_ = async (req, res) => {
 const getAll = async (req, res) => {
   try {
     const series_ = await Series.findAll();
-    res.render("index", { series_ });
+    res.render("home", { series_ });
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
@@ -59,7 +59,7 @@ const create = async (req, res) => {
 
 const detalhes = (req, res) => {
   try {
-    res.render("detalhes");
+    res.render("lista");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
@@ -71,5 +71,5 @@ module.exports = {
   create,
   detalhes,
   login,
-  login_,
+  acesso,
 };
