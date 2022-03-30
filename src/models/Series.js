@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 const connection = require("../database/db");
 
-const Series = connection.define("series", {
+const Series = connection.define("serie", {
     
 });
