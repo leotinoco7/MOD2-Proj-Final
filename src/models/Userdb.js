@@ -1,3 +1,5 @@
+// FIZ CTRL C DO SERIES, NAO EDITEI AINDA
+
 const Sequelize = require("sequelize");
 const connection = require("../database/db");
 
@@ -31,4 +33,4 @@ const Series = connection.define('serie', {
 }
 );
 
-module.exports = Series
+module.exports = Userdb
