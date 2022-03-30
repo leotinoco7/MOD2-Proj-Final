@@ -1,5 +1,5 @@
 const res = require("express/lib/response");
-const Series = require("../models/Series");
+const Series = require('../models/Series');
 
 const login = (req, res) => {
   try {
