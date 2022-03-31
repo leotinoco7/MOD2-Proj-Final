@@ -11,8 +11,26 @@
 
     <body>
 
+        <main>
+            <form action="/cadastro" method="POST">
+                <div class="item">
+                    <input type="text" placeholder="Digite o título da obra" name="title" required>
+                 </div> 
+     
+                 <div class="item"> 
+                    <textarea  name="description" required>Digite a descrição da obra</textarea>
+                 </div>
+     
+                 <div class="item">
+                    <input type="text" placeholder="Digite a URL da capa" name="image" required> 
+                 </div>
+     
+                 <div class="item">
+                    <button type="submit">Cadastrar</button> 
+                 </div>
+            </form>
+        </main>
 
-        
-    </body>
+</body>
     
 </html>
