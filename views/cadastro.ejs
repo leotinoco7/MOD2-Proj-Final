@@ -11,26 +11,72 @@
 
     <body>
 
+        <nav>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+
+                <li><a href="/cadastro"> Cadastre </a></li>
+                <li><h1><a href="/"> Blue Séries </a></h1></li>
+                <li><a href="/lista"> Lista das Séries</a></li>
+
+            </ul>
+
+        </nav>
+
+        <header>
+
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="/img/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/banner2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/banner3.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/banner4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="/img/banner5.jpg" alt=""></div>
+
+
+                </div>
+
+                <div class="swiper-btn-next"></div>
+                <div class="swiper-btn-prev"></div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </header>
+
         <main>
-            <form action="/cadastro" method="POST">
-                <div class="item">
-                    <input type="text" placeholder="Digite o título da obra" name="title" required>
-                 </div> 
-     
-                 <div class="item"> 
-                    <textarea  name="description" required>Digite a descrição da obra</textarea>
-                 </div>
-     
-                 <div class="item">
-                    <input type="text" placeholder="Digite a URL da capa" name="image" required> 
-                 </div>
-     
-                 <div class="item">
-                    <button type="submit">Cadastrar</button> 
-                 </div>
-            </form>
+            <section id="cadastro">
+
+                <form action="/cadastro" method="POST">
+                    <div class="item">
+                        <input type="text" placeholder="Digite o título da obra" name="title" required>
+                     </div> 
+         
+                     <div class="item"> 
+                        <textarea  name="description" required>Digite a descrição da obra</textarea>
+                     </div>
+         
+                     <div class="item">
+                        <input type="text" placeholder="Digite a URL da capa" name="image" required> 
+                     </div>
+         
+                     <div class="item">
+                        <button type="submit">Cadastrar</button> 
+                     </div>
+
+                </form>
+
+            </section>
+
         </main>
 
-</body>
+    </body>
     
 </html>
