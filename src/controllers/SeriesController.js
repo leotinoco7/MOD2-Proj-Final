@@ -27,14 +27,24 @@ const create = async (req, res) => {
     }
 
     await Series.create(serie);
-    res.redirect("lista");
+    res.redirect("/lista");
+  } catch (err) {
+    res.status(500).send({ err: err.message });
+  }
+};
+
+const detalhes = async (req, res) => {
+  try {
+    const series_ = await Series.findAll();
+
+    res.render("lista", series_);
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
 };
 
 
-const getById = async (req, res) => {
+const Edit = async (req, res) => {
   try {
     const method = req.params.method;
     const series_ = await Series.findAll();
@@ -60,14 +70,15 @@ const getById = async (req, res) => {
 
 const update = (req, res) => {};
 
-app.get("/deletar/:id", async (req,res) ==> {
-  const serie = 
+app.get("/deletar/:id", async (req,res) => {
+  const serie = await Series.findByPk(req.params.id);
 })
 
 module.exports = {
   getAll,
   cadastro,
   create,
-  getById,
+  Ed,
   update,
+  detalhes
 };
