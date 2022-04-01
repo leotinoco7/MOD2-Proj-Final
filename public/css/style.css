@@ -92,6 +92,66 @@ nav ul li a {
   }
 }
 
+section#cadastro{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3rem;
+  justify-content: center;
+}
+
+section#cadastro h2{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+
+section#cadastro form input{
+  min-width: 350px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: solid 2px #ccc;
+  margin: 0 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+section#cadastro form textarea{
+  min-width: 350px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: solid 2px #ccc;
+  margin: 0 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px;
+  flex-direction: column;
+  display: flex;
+}
+
+section#cadastro form button{
+  padding: 0.6rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #555555;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 10px 0 10px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+section#cadastro form button:hover{
+  background-color: rgb(65, 65, 65);
+}
+
 button {
   border: none;
   background: none;

@@ -11,20 +11,25 @@
         <%- include('./components/header') %>
 
         <main>
+
+            
+
             <section id="cadastro">
+
+                <h2>Cadastre seu filme ou série!</h2>
 
                 <form action="/create" method="POST">
                     <div class="item">
                         <input type="text" placeholder="Digite o título da obra" name="title" required>
-                     </div> 
+                    </div> 
          
-                     <div class="item"> 
+                    <div class="item"> 
                         <textarea  name="description" required>Digite a descrição da obra</textarea>
-                     </div>
+                    </div>
          
-                     <div class="item">
+                    <div class="item">
                         <input type="text" placeholder="Digite a URL da capa" name="image" required> 
-                     </div>
+                    </div>
          
                      <div class="item">
                         <button type="submit">Cadastrar</button> 
