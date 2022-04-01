@@ -37,48 +37,48 @@ const detalhes = async (req, res) => {
   try {
     const series_ = await Series.findAll();
 
-    res.render("lista", series_);
+    res.render("lista", {series_});
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
 };
 
 
-const Edit = async (req, res) => {
-  try {
-    const method = req.params.method;
-    const series_ = await Series.findAll();
-    const serie = await Series.findByPk(req.params.id);
+// const Edit = async (req, res) => {
+//   try {
+//     const method = req.params.method;
+//     const series_ = await Series.findAll();
+//     const serie = await Series.findByPk(req.params.id);
 
-    if (method == "put") {
-      res.render("lista", {
-        series_,
-        seriePut: serie,
-        serieDel: null,
-      });
-    } else {
-      res.render("lista", {
-        series_,
-        seriePut: null,
-        serieDel: serie,
-      });
-    }
-  } catch (err) {
-    res.status(500).send({ err: err.message });
-  }
-};
+//     if (method == "put") {
+//       res.render("lista", {
+//         series_,
+//         seriePut: serie,
+//         serieDel: null,
+//       });
+//     } else {
+//       res.render("lista", {
+//         series_,
+//         seriePut: null,
+//         serieDel: serie,
+//       });
+//     }
+//   } catch (err) {
+//     res.status(500).send({ err: err.message });
+//   }
+// };
 
-const update = (req, res) => {};
+//const update = (req, res) => {};
 
-app.get("/deletar/:id", async (req,res) => {
-  const serie = await Series.findByPk(req.params.id);
-})
+//app.get("/deletar/:id", async (req,res) => {
+ // const serie = await Series.findByPk(req.params.id);
+//})
 
 module.exports = {
   getAll,
   cadastro,
   create,
-  Ed,
-  update,
+  // Edit,
+  // update,
   detalhes
 };
