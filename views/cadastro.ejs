@@ -11,15 +11,25 @@
         <%- include('./components/header') %>
 
         <main>
+            
             <section id="cadastro">
 
                 <form action="/create" method="POST">
                     <div class="item">
-                        <input type="text" placeholder="Digite o título da obra" name="title" required>
+                        <input type="text" placeholder="Digite o título da obra" name="title" id="nome" required>
                      </div> 
+
+                     <div class="item">
+                        <input type="text" placeholder="Gênero" name="genero" id="genero" required> 
+                     </div>
+                     
          
                      <div class="item"> 
                         <textarea  name="description" required>Digite a descrição da obra</textarea>
+                     </div>
+
+                     <div class="item">
+                        <input type="text" placeholder="Ano de lançamento" name="anolancamento" id="ano" required> 
                      </div>
          
                      <div class="item">
@@ -27,7 +37,9 @@
                      </div>
          
                      <div class="item">
+
                         <button type="submit">Cadastrar</button> 
+
                      </div>
 
                 </form>
