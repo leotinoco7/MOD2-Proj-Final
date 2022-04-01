@@ -60,6 +60,10 @@ const getById = async (req, res) => {
 
 const update = (req, res) => {};
 
+app.get("/deletar/:id", async (req,res) ==> {
+  const serie = 
+})
+
 module.exports = {
   getAll,
   cadastro,
