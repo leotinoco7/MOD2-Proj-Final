@@ -46,7 +46,6 @@ const getById = async (req, res) => {
   try {
     const method = req.params.method;
     const series_ = await Series.findAll();
-    const serie = await Series.findByPk(req.params.id);
 
     if (method == "put") {
       res.render("lista", {
