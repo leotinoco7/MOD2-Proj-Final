@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Blue Séries</title>
-
+    <%- include('./components/head') %>
 </head>
 
     <body>
 
+        <%- include('./components/navbar') %>
+        <% series_.forEach((serie) => { %> 
+        <div class="container-list">
+            <div class="card-list">
+                <div class="box">
+                    <div class="content">
+                        <h2><%= serie.title%></h2>
+                        <img src="<%= serie.image%>" alt="Capa da serie / filme">
+                        <p><%=serie.description%></p>
+                        <a href="#">Detalhes</a>
+                        <a id="edit" href="/lista/<%= serie.id %>">Editar</a>
+                        <a id="delete" href="/lista/<%= serie.id %>">Apagar</a>
+                    </div>
+                </div>
+            </div>
+        <% }) %> 
+
+        <% if (seriePut != null) {%>
+            <%- include('./components/modalPut') %>
+        <% } %>
+
+        <% if (serieDel != null) {%>
+            <%- include('./components/modalDel') %>
+        <% } %> -->
 
         
+        <%- include('./components/footer') %>
+
     </body>
     
 </html>

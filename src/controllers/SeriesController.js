@@ -1,34 +1,10 @@
 const res = require("express/lib/response");
-const Series = require('../models/Series');
-
-const login = (req, res) => {
-  try {
-    res.render("index");
-  } catch (err) {
-    res.status(500).send({ err: err.message });
-  }
-};
-
-const acesso = async (req, res) => {
-  try {
-    let username = req.body.username;
-    let password = req.body.password;
-
-    if (!acesso) {
-      return res.redirect("/index");
-    }
-
-    await Series.acesso(username), await Series.acesso(password);
-    res.redirect("/home");
-  } catch (err) {
-    res.status(500).send({ err: err.message });
-  }
-};
+const Series = require("../models/Series");
 
 const getAll = async (req, res) => {
   try {
     const series_ = await Series.findAll();
-    res.render("home", { series_ });
+    res.render("index", { series_,seriePut: null, serieDel: null});
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
@@ -51,15 +27,16 @@ const create = async (req, res) => {
     }
 
     await Series.create(serie);
-    res.redirect("/");
+    res.redirect("/lista");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
 };
 
-const detalhes = (req, res) => {
+const detalhes = async (req, res) => {
   try {
-    res.render("lista");
+    const series_ = await Series.findAll();
+    res.render("lista", { series_, seriePut: null, serieDel: null });
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
@@ -72,13 +49,13 @@ const getById = async (req, res) => {
     const serie = await Series.findByPk(req.params.id);
 
     if (method == "put") {
-      res.render("home", {
+      res.render("lista", {
         series_,
         seriePut: serie,
         serieDel: null,
       });
     } else {
-      res.render("home", {
+      res.render("lista", {
         series_,
         seriePut: null,
         serieDel: serie,
@@ -89,15 +66,31 @@ const getById = async (req, res) => {
   }
 };
 
-const update = (req, res) => {};
+const update = async (req, res) => {
+  try {
+    const serie = req.bady;
+    await Series.update(serie, { where: { id: req.params.id } });
+    res.redirect("/lista");
+  } catch (err) {
+    res.status(500).send({ err: err.message });
+  }
+};
+
+const remove = async (req, res) => {
+  try {
+    await Series.destroy({ where: { id: req.params.id } });
+    res.redirect("/lista");
+  } catch (err) {
+    res.status(500).send({ err: err.message });
+  }
+};
 
 module.exports = {
   getAll,
   cadastro,
   create,
   detalhes,
-  login,
-  acesso,
   getById,
   update,
+  remove,
 };

@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Blue Séries</title>
-
+    <%- include('./components/head') %>
 </head>
 
     <body>
 
+        <%- include('./components/navbar') %>
 
-        
+        <%- include('./components/header') %>
+
+        <main>
+            <section id="cadastro">
+
+                <form action="/create" method="POST">
+                    <div class="item">
+                        <input type="text" placeholder="Digite o título da obra" name="title" required>
+                     </div> 
+         
+                     <div class="item"> 
+                        <textarea  name="description" required>Digite a descrição da obra</textarea>
+                     </div>
+         
+                     <div class="item">
+                        <input type="text" placeholder="Digite a URL da capa" name="image" required> 
+                     </div>
+         
+                     <div class="item">
+                        <button type="submit">Cadastrar</button> 
+                     </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <%- include('./components/footer') %>
+
     </body>
     
 </html>

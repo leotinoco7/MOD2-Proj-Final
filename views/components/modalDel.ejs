@@ -1,0 +1,20 @@
+<section class="modal-overlay" id="overlay">
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <h3>Apagar Série</h3>
+            <a href="/lista" id="close-modal-put">X</a>
+        </div>
+
+        <div class="modal-body">
+            <p>Tem certeza que deseja excluir a <%= serieDel.nome %></p>
+            <div id="btns-del">
+                <a id="no" href="/lista">Não</a>
+                <a id="yes" href="/remove/<%= serieDel.id %>">Sim</a>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

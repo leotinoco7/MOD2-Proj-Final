@@ -1,0 +1,29 @@
+<section class="modal-overlay" id="overlay">
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <h3>Atualizar Série</h3>
+            <a href="/lista">X</a>
+        </div>
+
+        <div class="modal-body">
+            <form action="/update/<%= seriePut %>" method="POST">
+
+                <label for="title">Título da obra:</label>
+                <input type="text" id="title" nome="title" value="<%= seriePut %>">
+
+                <label for="description">Descrição da obra:</label>
+                <input type="text" id="description" nome="description" value="<%= seriePut %>">
+
+                <label for="image">Imagem da obra:</label>
+                <input type="text" id="image" nome="image" value="<%= seriePut %>">
+
+                <button id="btnEditar" type="submit">Editar</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
