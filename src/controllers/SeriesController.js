@@ -27,7 +27,7 @@ const create = async (req, res) => {
     }
 
     await Series.create(serie);
-    res.redirect("/lista");
+    res.redirect("lista");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
