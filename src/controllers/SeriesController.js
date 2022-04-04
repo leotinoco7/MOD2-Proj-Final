@@ -14,7 +14,7 @@ const getAll = async (req, res) => {
 
     randomSeries = series_[currentRandom];
 
-    console.log(currentRandom);
+    console.log(randomSeries);
 
     res.render("index", { series_ });
 
