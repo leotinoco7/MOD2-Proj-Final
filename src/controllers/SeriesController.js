@@ -3,13 +3,28 @@ const Series = require("../models/Series");
 let message = "";
 let type = "";
 
+const series_ = Series.findAll();
+
 const getAll = async (req, res) => {
   try {
     const series_ = await Series.findAll();
-    res.render("index", { series_});
+
+    let randomSeries;
+
+    currentRandom = [Math.floor(Math.random() * series_.length)];
+
+    randomSeries = series_[currentRandom];
+
+    console.log(randomSeries);
+
+    res.render("index", { series_ });
+
+    
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
+  
+
 };
 
 const cadastro = (req, res) => {
