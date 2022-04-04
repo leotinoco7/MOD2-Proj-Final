@@ -20,16 +20,42 @@
 
                 <form action="/create" method="POST">
                     <div class="item">
-                        <input type="text" placeholder="Digite o título da obra" name="title" required>
-                    </div> 
+                        <label for="title">Título da obra:</label>
+                        <input type="text" name="title" required>
+                     </div> 
          
-                    <div class="item"> 
-                        <textarea  name="description" required>Digite a descrição da obra</textarea>
-                    </div>
+                     <div class="item"> 
+                        <label for="description">Descrição:</label>
+                        <textarea  name="description" required></textarea>
+                     </div>
          
-                    <div class="item">
-                        <input type="text" placeholder="Digite a URL da capa" name="image" required> 
-                    </div>
+                     <div class="item">
+                        <label for="image">URL da Capa:</label>
+                        <input type="url" placeholder="https://www.exemplo.com.br/imagem" name="image" required> 
+                     </div>
+
+                     <div class="item">
+                        <label for="genre">Selecione o gênero principal:</label>
+                        <select name="genre">
+                            <option	value="acao">Ação</option>
+                            <option	value="aventura">Aventura</option>
+                            <option	value="comedia">Comédia</option>
+                            <option value="documentario">Documentário</option>
+                            <option value="drama">Drama</option>
+                            <option	value="espionagem">Espionagem</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="guerra">Guerra</option>
+                            <option value="romance">Romance</option>
+                            <option value="suspense">Suspense</option>
+                            <option value="terror">Terror</option>
+                                <!-- Posso usar os atributos Size para mudar a quantidade de opções que vão aparecer e Multiple para tornar possível a escolha de opções diversas-->
+                        </select>
+                     </div>
+
+                     <div class="item">
+                        <label for="year">Ano de lançamento:</label>
+                        <input type="number" placeholder="Somente números" name="year" required> 
+                     </div>
          
                      <div class="item">
                         <button type="submit">Cadastrar</button> 
@@ -42,6 +68,11 @@
         </main>
 
         <%- include('./components/footer') %>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="/js/scriptSwiper.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
 
     </body>
     

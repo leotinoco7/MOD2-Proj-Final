@@ -23,6 +23,16 @@ const Series = connection.define('serie', {
         allowNull: false,
         
     },
+    year: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+
+    },
+    genre: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        
+    }
 }, {
     freezeTableName: true,
     timestamps: false,
