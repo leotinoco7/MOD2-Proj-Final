@@ -30,6 +30,11 @@ body {
   flex-direction: column;
 }
 
+header {
+
+
+}
+
 nav {
   position: fixed;
   z-index: 9999;
@@ -362,7 +367,6 @@ button:focus {
 }
 .info {
   margin-bottom: calc(var(--card-height) / 8);
-  margin-left: calc(var(--card-width) / 1.5);
   transform: translateZ(2rem);
   transition: transform var(--card-transition-duration)
     var(--card-transition-easing);
@@ -499,10 +503,10 @@ footer p {
   justify-content: center;
 }
 
-/* header{
+header{
   width: 100%;
   height: 80%;
-} */
+}
 
 .swiper {
   width: 100%;
@@ -526,7 +530,7 @@ footer p {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .modal-overlay {
@@ -553,7 +557,199 @@ footer p {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-evenly;
 }
+
+.modal h3{
+  color: #151515;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.modal .label-coluns{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 3rem;
+  justify-content: center;
+  width: 450px;
+}
+
+.modal .label-coluns label{
+  min-width: 350px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+   flex-direction: column;
+  display: flex;
+}
+
+.modal .label-coluns input{
+  min-width: 350px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px #ccc;
+  margin: 0rem 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px ;
+  background-color: rgb(173, 173, 173);
+  flex-direction: column;
+  display: flex;
+}
+
+.modal .label-coluns textarea{
+  min-width: 350px;
+  width: 100%;
+  height: 20%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px #ccc;
+  margin: 0rem 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px ;
+  background-color: rgb(173, 173, 173);
+  flex-direction: column;
+  display: flex;
+}
+
+.modal .label-coluns select{
+  min-width: 350px;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px #ccc;
+  margin: 0rem 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px ;
+  background-color: rgb(173, 173, 173);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+#btnEditar{
+  color: #fff;
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  top: 40%;
+  padding: 10px 50px;
+  border-radius: 20px;
+  transition: 0.6s
+}
+
+#btnEditar:hover{
+  color: rgb(177, 171, 115);
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: solid 1px rgb(177, 171, 115);
+}
+
+#btnFechar{
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+#btnFechar:hover{
+  color: #c03f3f;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#yes{
+  color: #fff;
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  top: 40%;
+  padding: 10px 50px;
+  border-radius: 20px;
+  transition: 0.6s
+}
+
+#yes:hover{
+  color: rgb(87, 177, 79);
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: solid 1px rgb(87, 177, 79);
+}
+
+#no{
+  color: #fff;
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  top: 40%;
+  padding: 10px 50px;
+  border-radius: 20px;
+  transition: 0.6s
+}
+
+#no:hover{
+  color: rgb(221, 107, 87);
+  background: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 20px;
+  border: solid 1px rgb(221, 107, 87);
+}
+
 
 section#lists {
   display: flex;  
@@ -792,23 +988,20 @@ section#cards h2{
 
 .pokemon .popup-card .pokemon-img{
   z-index: 2;
-  background: #1d212b;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
-  height: 90%;
-  transform: translateY(25px);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .pokemon .popup-card .pokemon-img img{
-  z-index: 2;
-  /* position: relative; */
+  /* z-index: 2;
+  position: relative;
   width: 450px;
-  left: -50px;
+  left: -50px; */
 }
 
 .pokemon .popup-card .info{
@@ -816,7 +1009,7 @@ section#cards h2{
   background: #fff;
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
   border-radius: 10px; 
@@ -834,7 +1027,6 @@ section#cards h2{
 .pokemon .popup-card .info #name-info{
   color: #151515;
   font-size: 40px;
-  line-height: 20px;
   margin: 10px;
   padding-bottom: 1rem;
 }
@@ -867,6 +1059,7 @@ section#cards h2{
   text-decoration: none;
   text-transform: uppercase;
   margin: 10px auto;
+  top: 40%;
   padding: 10px 50px;
   border-radius: 20px;
   transition: 0.6s;
@@ -895,7 +1088,7 @@ section#cards h2{
 }
 
 .pokemon .popup-card .info .add-wish:hover{
-  color: #853333;
+  color: #c03f3f;
   font-size: 14px;
   text-align: center;
   font-weight: 600;
@@ -984,7 +1177,6 @@ section#message {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
-
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -8,46 +8,57 @@
         <div class="modal-body">
             <form action="/update/<%= seriePut.id %>" method="POST">
 
-                 <div class="item">
-                    <label for="title">Título da obra:</label>
-                    <input type="text" name="title" required value="<%= seriePut.title %>">
-                 </div> 
-     
-                 <div class="item"> 
-                    <label for="description">Descrição:</label>
-                    <textarea  name="description" required><%= seriePut.description %></textarea>
-                 </div>
-     
-                 <div class="item">
-                    <label for="image">URL da Capa:</label>
-                    <input type="url" placeholder="https://www.exemplo.com.br/imagem" name="image" value="<%= seriePut.image %>" required> 
-                 </div>
+                <div class="label-coluns">
 
-                 <div class="item">
-                    <label for="genre">Selecione o gênero principal:</label>
-                    <select name="genre">
-                        <option	value="acao">Ação</option>
-                        <option	value="aventura">Aventura</option>
-                        <option	value="comedia">Comédia</option>
-                        <option value="documentario">Documentário</option>
-                        <option value="drama">Drama</option>
-                        <option	value="espionagem">Espionagem</option>
-                        <option value="fantasia">Fantasia</option>
-                        <option value="guerra">Guerra</option>
-                        <option value="romance">Romance</option>
-                        <option value="suspense">Suspense</option>
-                        <option value="terror">Terror</option>
-                            <!-- Posso usar os atributos Size para mudar a quantidade de opções que vão aparecer e Multiple para tornar possível a escolha de opções diversas-->
-                    </select>
-                 </div>
+                    <div class="item">
+                        <label for="title">Título da obra:</label>
+                        <input type="text" name="title" required value="<%= seriePut.title %>">
+                     </div> 
+         
+                     <div class="item"> 
+                        <label for="description">Descrição:</label>
+                        <textarea  name="description" required><%= seriePut.description %></textarea>
+                     </div>
+         
+                     <div class="item">
+                        <label for="image">URL da Capa:</label>
+                        <input type="url" placeholder="https://www.exemplo.com.br/imagem" name="image" value="<%= seriePut.image %>" required> 
+                     </div>
+    
+                     <div class="item">
+                        <label for="genre">Selecione o gênero principal:</label>
+                        <select name="genre">
+                            <option	value="acao">Ação</option>
+                            <option	value="aventura">Aventura</option>
+                            <option	value="comedia">Comédia</option>
+                            <option value="documentario">Documentário</option>
+                            <option value="drama">Drama</option>
+                            <option	value="espionagem">Espionagem</option>
+                            <option value="fantasia">Fantasia</option>
+                            <option value="guerra">Guerra</option>
+                            <option value="romance">Romance</option>
+                            <option value="suspense">Suspense</option>
+                            <option value="terror">Terror</option>
+                                <!-- Posso usar os atributos Size para mudar a quantidade de opções que vão aparecer e Multiple para tornar possível a escolha de opções diversas-->
+                        </select>
+                     </div>
+    
+                     <div class="item">
+                        <label for="year">Ano de lançamento:</label>
+                        <input type="number" placeholder="Somente números" name="year" value="<%= seriePut.year %>" required> 
+                     </div>
 
-                 <div class="item">
-                    <label for="year">Ano de lançamento:</label>
-                    <input type="number" placeholder="Somente números" name="year" value="<%= seriePut.year %>" required> 
-                 </div>
+                </div>
 
-                <button id="btnEditar" type="submit">Editar</button>
-                <a href="/lista"><button id="btnEditar">Fechar</a></bbutton>
+                 
+
+                 <div class="btn">
+
+                    <button id="btnEditar" type="submit">Editar</button>
+                    <a href="/lista"><button id="btnFechar">Fechar</a></bbutton>
+                    
+                 </div>
+                   
 
             </form>
 
