@@ -1,4 +1,4 @@
-# Seriálogo - Projeto Final Mod 2 ! <img src="https://user-images.githubusercontent.com/95504029/151560441-2e792d97-fd65-462c-8fd7-70f581de5674.gif" width="100">
+# 🎞 Seriálogo - Projeto Final Mod 2 ! <img src="https://user-images.githubusercontent.com/95504029/151560441-2e792d97-fd65-462c-8fd7-70f581de5674.gif" width="100">
 
 Sejam bem-vindos ao nosso catálogo de filmes e séries. <br>
 
@@ -38,7 +38,7 @@ npm run dev
 
 * **Thiago Alves** - *Front-End* - [Linkedin](https://www.linkedin.com/in/thiago-alves-b05ab2b0/)
 * **Ana Beatriz** - *Back-End* - [Linkedin](https://www.linkedin.com/in/anabeatrizalmeida/)
-* **Leonardo Tinoco** - *Banco de Dados * - [LinkTree](https://linktr.ee/leotinoco7)
+* **Leonardo Tinoco** - *Banco de Dados* - [LinkTree](https://linktr.ee/leotinoco7)
 * **Daniel Vinhas** - *Banco de Dados* - [Linkedin](https://www.linkedin.com/in/vinhasdaniel/)
 
 
