@@ -3,7 +3,6 @@ const Series = require("../models/Series");
 let message = "";
 let type = "";
 
-
 const series_ = Series.findAll();
 
 const getAll = async (req, res) => {
