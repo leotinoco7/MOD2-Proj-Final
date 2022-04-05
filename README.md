@@ -38,7 +38,7 @@ npm run dev
 
 * **Thiago Alves** - *Front-End* - [Linkedin](https://www.linkedin.com/in/thiago-alves-b05ab2b0/)
 * **Ana Beatriz** - *Back-End* - [Linkedin](https://www.linkedin.com/in/anabeatrizalmeida/)
-* **Leonardo Tinoco** - *Banco de Dados * - [LinkTree](https://linktr.ee/leotinoco7)
+* **Leonardo Tinoco** - *Banco de Dados* - [LinkTree](https://linktr.ee/leotinoco7)
 * **Daniel Vinhas** - *Banco de Dados* - [Linkedin](https://www.linkedin.com/in/vinhasdaniel/)
 
 
