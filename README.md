@@ -46,6 +46,8 @@ das suas séries
 
 ## Fluxograma (clique para aumentar)
 
+<img src="https://github.com/leotinoco7/MOD2-Proj-Final/blob/main/public/img/Projeto%20final%20mod%202.jpg?raw=true">
+
 ## ✒️ Autores
 
 * **Thiago Alves** - *Front-End* - [Linkedin](https://www.linkedin.com/in/thiago-alves-b05ab2b0/)
