@@ -1,4 +1,7 @@
 <nav>
+    <% if(message != "") { %>
+        <%- include('./alerts') %>
+    <% } %>
 
    <input type="checkbox" id="check">
    <label for="check" class="checkbtn">
