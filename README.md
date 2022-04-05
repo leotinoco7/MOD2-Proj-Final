@@ -2,7 +2,7 @@
 
 Sejam bem-vindos ao nosso catálogo de filmes e séries. <br>
 
-Aqui você faz parte da equipe. Você pode manusear todos os dados de nosso site, adicionar, deletar e atualizar os títulos que você quiser.
+O site funciona como uma to watch list, aonde você pode cadastrar séries, filmes e livros, além de poder editar e deletar da maneira que você quiser.
 
 ## 👀 Vizualização
 
@@ -27,6 +27,16 @@ Para visualização em servidor local:
 npm run dev
 ```
 
+## 🛒 Futuras implementações:
+
+* Login via google
+* Marcação de episódios/séries já assistidas (com a opção de adicionar uma avaliação)
+* API de séries com todos os dados
+* Opção de adicionar temporadas
+* Alerta de novos episódios/temporadas
+das suas séries
+* APP Mobile
+* Área de Favoritos
 
 ## 🛠️ Construído com
 
