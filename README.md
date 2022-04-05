@@ -40,9 +40,9 @@ das suas séries
 
 ## 🛠️ Construído com
 
-* Engine - [NodeJs](https://nodejs.org/en/docs/)
-* FrameWork - [Express](https://expressjs.com/pt-br/guide/routing.html)
-* Db - [PostgreSQL](https://www.postgresql.org/docs/)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) - Engine
+* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) - FrameWork
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) - DB
 
 ## ✒️ Autores
 
