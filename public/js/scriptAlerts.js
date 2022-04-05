@@ -1,7 +1,8 @@
 //Mensagem de alerta que irá aparecer na tela.
 
+const close = () => {
 const closeMessage = document.querySelector("#close");
-const message = document.querySelector("#message");
+const message = document.querySelector(".message");
 
 closeMessage.addEventListener("click", function () {
   message.style.display = "none";
@@ -10,3 +11,6 @@ closeMessage.addEventListener("click", function () {
 setTimeout(() => {
   message.style.display = "none"
 }, 5000)
+};
+
+close()
