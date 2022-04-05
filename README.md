@@ -44,7 +44,7 @@ das suas séries
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) - FrameWork
 * ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) - DB
 
-## Fluxograma (clique para aumentar)
+## 📖Fluxograma (clique para aumentar)
 
 <img src="https://github.com/leotinoco7/MOD2-Proj-Final/blob/main/public/img/Projeto%20final%20mod%202.jpg?raw=true">
 
