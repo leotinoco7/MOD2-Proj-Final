@@ -7,6 +7,10 @@ const series_ = Series.findAll();
 
 const getAll = async (req, res) => {
   try {
+    setTimeout(() => {
+      message = ""
+      type = ""
+    }, 1000)
     const series_ = await Series.findAll();
 
     currentRandom = [Math.floor(Math.random() * series_.length)];
@@ -15,13 +19,19 @@ const getAll = async (req, res) => {
 
     do{
       var previusRandom = [Math.floor(Math.random() * series_.length)];
-    }while(previusRandom == currentRandom);
+      if(previusRandom != currentRandom){
+        break;
+      }
+    }while(true);
     
     previusRS = series_[previusRandom]
 
     do{
       var nextRandom = [Math.floor(Math.random() * series_.length)];
-    }while(nextRandom == currentRandom || nextRandom == previusRandom);
+      if(nextRandom != currentRandom && nextRandom != previusRandom){
+        break;
+      }
+    }while(true);
 
     nextRS = series_[nextRandom]
 
@@ -38,6 +48,10 @@ const getAll = async (req, res) => {
 
 const cadastro = (req, res) => {
   try {
+    setTimeout(() => {
+      message = ""
+      type = ""
+    }, 1000)
     
     res.render("cadastro", {message, type});
   } catch (err) {
@@ -70,6 +84,11 @@ const create = async (req, res) => {
 
 const detalhes = async (req, res) => {
   try {
+    setTimeout(() => {
+      message = ""
+      type = ""
+    }, 1000)
+    
     const series_ = await Series.findAll();
     res.render("lista", { series_, seriePut: null, serieDel: null, message, type});
   } catch (err) {
