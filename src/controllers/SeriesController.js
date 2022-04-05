@@ -3,21 +3,31 @@ const Series = require("../models/Series");
 let message = "";
 let type = "";
 
+
 const series_ = Series.findAll();
 
 const getAll = async (req, res) => {
   try {
     const series_ = await Series.findAll();
 
-    let randomSeries;
-
     currentRandom = [Math.floor(Math.random() * series_.length)];
 
-    randomSeries = series_[currentRandom];
+    currentRS = series_[currentRandom];
 
-    console.log(randomSeries);
+    do{
+      var previusRandom = [Math.floor(Math.random() * series_.length)];
+    }while(previusRandom == currentRandom);
+    
+    previusRS = series_[previusRandom]
 
-    res.render("index", { series_ });
+    do{
+      var nextRandom = [Math.floor(Math.random() * series_.length)];
+    }while(nextRandom == currentRandom || nextRandom == previusRandom);
+
+    nextRS = series_[nextRandom]
+
+
+    res.render("index", { series_, currentRS, previusRS, nextRS, message, type });
 
     
   } catch (err) {
@@ -29,6 +39,7 @@ const getAll = async (req, res) => {
 
 const cadastro = (req, res) => {
   try {
+    
     res.render("cadastro", {message, type});
   } catch (err) {
     res.status(500).send({ err: err.message });
@@ -46,8 +57,12 @@ const create = async (req, res) => {
     }
 
     await Series.create(serie);
+  
     message = "Série cadastrada com sucesso!";
     type = "success";
+
+    console.log(message);
+    
     res.redirect("/lista");
   } catch (err) {
     res.status(500).send({ err: err.message });
@@ -86,6 +101,7 @@ const getById = async (req, res) => {
         type,
       });
     }
+
   } catch (err) {
     res.status(500).send({ err: err.message });
   }

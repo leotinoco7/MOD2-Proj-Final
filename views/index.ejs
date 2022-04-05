@@ -30,19 +30,19 @@
                 <div class="cards__wrapper">
                     <div class="card current--card">
                         <div class="card__image">
-                        <img src="/img/supernatural.jpg" alt="" />
+                        <img src="<%= currentRS.image %>" alt="" />
                         </div>
                     </div>
 
                     <div class="card next--card">
                         <div class="card__image">
-                        <img src="/img/the last kingdom.jpg" alt="" />
+                        <img src="<%= nextRS.image %>" alt="" />
                         </div>
                     </div>
 
                     <div class="card previous--card">
                         <div class="card__image">
-                        <img src="/img/vikings.jpg" alt="" />
+                        <img src="<%= previusRS.image %>" alt="" />
                         </div>
                     </div>
                 </div>
@@ -66,21 +66,21 @@
         <div class="infoList">
             <div class="info__wrapper">
                 <div class="info current--info">
-                    <h1 class="text name">Supernatural</h1>
+                    <h1 class="text name"><%= currentRS.title %></h1>
 
-                    <h4 class="text location">Terror/Suspense</h4>
+                    <h4 class="text location"><%= currentRS.genre %></h4>
                 </div>
 
                 <div class="info next--info">
-                    <h1 class="text name">The Last Kingdom</h1>
+                    <h1 class="text name"><%= nextRS.title %></h1>
 
-                    <h4 class="text location">History/Action</h4>
+                    <h4 class="text location"><%= nextRS.genre %></h4>
                 </div>
 
             <div class="info previous--info">
-                <h1 class="text name">Vikings</h1>
+                <h1 class="text name"><%= previusRS.title %></h1>
 
-                <h4 class="text location">War/Drama</h4>
+                <h4 class="text location"><%= previusRS.genre%></h4>
 
             </div>
 
@@ -89,15 +89,15 @@
 
         <div class="app__bg">
             <div class="app__bg__image current--image">
-            <img src="/img/supernatural.jpg" alt="" />
+            <img src="<%= currentRS.image %>" alt="" />
             </div>
 
             <div class="app__bg__image next--image">
-            <img src="/img/the last kingdom.jpg" alt="" />
+            <img src="<%= nextRS.image %>" alt="" />
             </div>
 
             <div class="app__bg__image previous--image">
-            <img src="/img/vikings.jpg" alt="" />
+            <img src="<%= previusRS.image %>" alt="" />
             </div>
         </div>
         </div>
@@ -137,6 +137,7 @@
         <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
         <script src="/js/script.js"></script>
+        <script src="/js/scriptAlerts.js"></script>
      
     </body>
 

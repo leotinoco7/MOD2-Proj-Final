@@ -5,7 +5,6 @@
 </head>
 
     <body>
-        
         <%- include('./components/navbar') %>
         <section id="lists">
         <% series_.forEach((serie) => { %> 
@@ -31,7 +30,12 @@
                                     
                                         <!-- botões para editar e deletar um card -->
                                         <a href="/getById/<%= serie.id %>/put" class="add-cart-btn">Editar</a>
-                                        <a href="/getById/<%= serie.id %>/remove" class="add-wish">Deletar</a>
+                                        <% if(series_.length > 3) {%>
+                                            <a href="/getById/<%= serie.id %>/remove" class="add-wish">Deletar</a>
+                                         <% } %>
+                                         <% if(series_.length < 4) {%>
+                                            <a href="#" id="deletehover" class="add-wish" title="Por favor, não apague toda lista.">Deletar</a>
+                                         <% } %>
                                     </div>
                                 </div>
                             </div>

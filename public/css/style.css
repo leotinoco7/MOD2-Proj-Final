@@ -30,11 +30,6 @@ body {
   flex-direction: column;
 }
 
-header {
-
-
-}
-
 nav {
   position: fixed;
   z-index: 9999;
@@ -505,12 +500,13 @@ footer p {
 
 header{
   width: 100%;
-  height: 80%;
+  max-height: 350px;
 }
 
 .swiper {
   width: 100%;
-  height: 60%;
+  height: 100%;
+  position: absolute;
 }
 
 .swiper-slide {
@@ -774,7 +770,7 @@ section#lists div.list img {
   height: 10rem;
 }
 
-section#lists div.list h2 {
+/* section#lists div.list h2 {
 }
 
 section#lists div.list p {
@@ -782,7 +778,7 @@ section#lists div.list p {
 
 a, a:hover, a:visited {
   text-decoration: none;
-}
+} */
 
 
 
@@ -997,12 +993,12 @@ section#cards h2{
   border-radius: 10px;
 }
 
-.pokemon .popup-card .pokemon-img img{
-  /* z-index: 2;
+/* .pokemon .popup-card .pokemon-img img{
+  z-index: 2;
   position: relative;
   width: 450px;
-  left: -50px; */
-}
+  left: -50px;
+} */
 
 .pokemon .popup-card .info{
   z-index: 2;
