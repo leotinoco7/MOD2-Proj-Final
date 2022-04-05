@@ -44,6 +44,8 @@ das suas séries
 * ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) - FrameWork
 * ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) - DB
 
+## Fluxograma (clique para aumentar)
+
 ## ✒️ Autores
 
 * **Thiago Alves** - *Front-End* - [Linkedin](https://www.linkedin.com/in/thiago-alves-b05ab2b0/)
