@@ -7,8 +7,8 @@
 
 
 :root {
-  --card-width: 250px;
-  --card-height: 400px;
+  --card-width: 300px;
+  --card-height: 500px;
   --card-transition-duration: 800ms;
   --card-transition-easing: ease;
 }
@@ -28,6 +28,8 @@ body {
   flex-direction: column;
   min-width: 380px;
   min-height: 650px;
+  background: rgb(186,186,186);
+  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
 }
 
 nav {
@@ -295,7 +297,7 @@ button:focus {
 }
 .cardList__btn .icon svg {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .cardList .cards__wrapper {
   position: relative;
@@ -1190,3 +1192,11 @@ section#cards h2{
   justify-content: space-between;
 }
 
+footer a, footer a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
