@@ -88,13 +88,8 @@ nav ul li:hover {
     height: 100%;
     background-image: linear-gradient(
       178.2deg,
-<<<<<<< HEAD
       rgb(114, 114, 114) 10.9%,
       rgb(105, 105, 105) 62.6%
-=======
-      rgb(83, 83, 83) 10.9%,
-      rgb(75, 75, 75) 62.6%
->>>>>>> 24bdf786fd724a67a943205608f82249bb3a1d22
     );
     top: 80px;
     left: -100%;
