@@ -104,7 +104,6 @@ nav ul li a:hover {
     display: block;
     transition: all 0.5s;
     justify-content: center;
-    min-width: 450px;
     z-index: 200;
   }
   nav ul li {
