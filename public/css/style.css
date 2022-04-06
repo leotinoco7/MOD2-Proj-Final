@@ -7,8 +7,8 @@
 
 
 :root {
-  --card-width: 300px;
-  --card-height: 500px;
+  --card-width: 250px;
+  --card-height: 400px;
   --card-transition-duration: 800ms;
   --card-transition-easing: ease;
 }
@@ -28,8 +28,6 @@ body {
   flex-direction: column;
   min-width: 380px;
   min-height: 650px;
-  background: rgb(186,186,186);
-  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
 }
 
 nav {
@@ -42,8 +40,7 @@ nav {
 
 nav ul {
   display: flex;
-  /* align-items: center; */
-  text-align: center;
+  align-items: center;
   list-style: none;
   justify-content: space-evenly;
 }
@@ -69,6 +66,10 @@ nav ul li a:hover {
  
 }
 
+#greygrad {
+  background: rgb(186,186,186);
+  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
+}
 
 .checkbtn {
   font-size: 30px;
@@ -119,6 +120,7 @@ main{
   align-items: center;
   justify-content: center;
 }
+
 
 section#cadastro{
   display: flex;
@@ -479,29 +481,13 @@ button:focus {
   transform-origin: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   :root {
     --card-width: 100px;
     --card-height: 180px;
   }
 }
-/* .support {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px;
-  display: flex;
-}
-.support a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 1.8rem;
-  backface-visibility: hidden;
-  transition: all 150ms ease;
-}
-.support a:hover {
-  transform: scale(1.1);
-} */
+
 
 footer {
   width: 100%;
@@ -511,6 +497,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   min-width: 380px;
+  border-top: 1px solid rgb(0, 0, 0, 20%);
 }
 
 footer p {
@@ -1171,8 +1158,10 @@ section#cards h2{
 }
 
 #greygrad {
-  background: rgb(186,186,186);
-  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
+  /* background: rgb(186,186,186);
+  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%); */
+  background: rgb(140,139,139);
+background: linear-gradient(132deg, rgba(140,139,139,1) 3%, rgba(107,107,107,1) 10%, rgba(98,98,98,1) 22%, rgba(86,86,86,1) 41%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
 }
 
 .message {
