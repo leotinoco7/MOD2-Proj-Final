@@ -6,7 +6,7 @@ O site funciona como uma to watch list, aonde você pode cadastrar séries, film
 
 ## 👀 Vizualização
 
-Veja nossa deploy no [heroku](https://mod2-proj-final.herokuapp.com)
+Veja nosso deploy no [heroku](https://mod2-proj-final.herokuapp.com)
 
 ## 🚀 Começando
 
