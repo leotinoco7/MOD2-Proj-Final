@@ -829,7 +829,6 @@ section#cards{
 
 }
 
-
 section#cards h2{
   width: 100%;
   font-size: 30px;
@@ -853,7 +852,7 @@ section#cards h2{
   justify-content: center;
 }
 
-.pokemon .pokemon-card{
+.seriesClass .seriesClass-card{
   display: flex;
   flex-direction: row;
   z-index: 1;
@@ -866,7 +865,7 @@ section#cards h2{
   box-shadow: 10px 5px 5px black;
 }
 
-.pokemon .pokemon-card:before{
+.seriesClass .seriesClass-card:before{
   content: '';
   background: rgba(255, 255, 255, 0.1);
   position: absolute;
@@ -879,15 +878,16 @@ section#cards h2{
   border-bottom-left-radius: 10px;
 }
 
-.pokemon .pokemon-card .pokemon-img{
+.seriesClass .seriesClass-card .seriesClass-img{
   display: flex;
   z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
+  max-width: 350px;
 }
 
-.pokemon .pokemon-card .name{
+.seriesClass .seriesClass-card .name{
   z-index: 2;
   color: rgb(255, 255, 255);
   text-shadow: 10px 2px 5px rgb(0, 0, 0);
@@ -895,10 +895,11 @@ section#cards h2{
   width: 100%;
   text-align: center;
   letter-spacing: 1px;
+  
   background: #000;
 }
 
-.pokemon .pokemon-card .tipo{
+.seriesClass .seriesClass-card .tipo{
   z-index: 2;
   color: #fff;
   position: absolute;
@@ -909,7 +910,7 @@ section#cards h2{
   font-weight: 300;
 }
 
-.pokemon .pokemon-card .popup-btn{
+.seriesClass .seriesClass-card .popup-btn{
   z-index: 2;
   color: #fff;
   background: rgb(0, 0, 0);
@@ -927,7 +928,7 @@ section#cards h2{
   cursor: pointer;
 }
 
-.pokemon .pokemon-card .popup-btn:hover{
+.seriesClass .seriesClass-card .popup-btn:hover{
   z-index: 2;
   color: rgb(177, 171, 115);
   background: rgb(0, 0, 0);
@@ -948,7 +949,7 @@ section#cards h2{
 
 /* Estilização dos detalhes */
 
-.pokemon .popup-view{
+.seriesClass .popup-view{
   z-index: 2;
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -964,12 +965,12 @@ section#cards h2{
   transition: 0.7s;
 }
 
-.pokemon .popup-view.active{
+.seriesClass .popup-view.active{
   opacity: 1;
   visibility: visible;
 }
 
-.pokemon .popup-card{
+.seriesClass .popup-card{
   position: relative;
   display: flex;
   width: 800px;
@@ -978,7 +979,7 @@ section#cards h2{
 
 }
 
-.pokemon .popup-card .pokemon-img{
+.seriesClass .popup-card .seriesClass-img{
   z-index: 2;
   position: relative;
   display: flex;
@@ -989,14 +990,14 @@ section#cards h2{
   border-radius: 10px;
 }
 
-/* .pokemon .popup-card .pokemon-img img{
+/* .seriesClass .popup-card .seriesClass-img img{
   z-index: 2;
   position: relative;
   width: 450px;
   left: -50px;
 } */
 
-.pokemon .popup-card .info{
+.seriesClass .popup-card .info{
   z-index: 2;
   background: #fff;
   display: flex;
@@ -1007,7 +1008,7 @@ section#cards h2{
   border-radius: 10px; 
 }
 
-.pokemon .popup-card .close-btn{
+.seriesClass .popup-card .close-btn{
   z-index: 3;
   position:absolute;
   right: 0;
@@ -1016,33 +1017,33 @@ section#cards h2{
   cursor: pointer;
 }
 
-.pokemon .popup-card .info #name-info{
+.seriesClass .popup-card .info #name-info{
   color: #151515;
   font-size: 40px;
   margin: 10px;
   padding-bottom: 1rem;
 }
 
-.pokemon .popup-card .info h2 span{
+.seriesClass .popup-card .info h2 span{
   color: #151515;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.pokemon .popup-card .info p{
+.seriesClass .popup-card .info p{
   font-size: 15px;
   margin: 10px;
 }
 
-.pokemon .popup-card .info .tipo{
+.seriesClass .popup-card .info .tipo{
   font-size: 35px;
   font-weight: 300;
   margin: 10px;
 
 }
 
-.pokemon .popup-card .info .add-cart-btn{
+.seriesClass .popup-card .info .add-cart-btn{
   color: #fff;
   background: #000000;
   font-size: 16px;
@@ -1057,7 +1058,7 @@ section#cards h2{
   transition: 0.6s;
 }
 
-.pokemon .popup-card .info .add-cart-btn:hover{
+.seriesClass .popup-card .info .add-cart-btn:hover{
   color: rgb(177, 171, 115);
   background: #000000;
   font-size: 16px;
@@ -1071,7 +1072,7 @@ section#cards h2{
   border: solid 1px rgb(177, 171, 115);
 }
 
-.pokemon .popup-card .info .add-wish{
+.seriesClass .popup-card .info .add-wish{
   color: #000000;
   font-size: 14px;
   text-align: center;
@@ -1079,7 +1080,7 @@ section#cards h2{
   transition: 0.6s;
 }
 
-.pokemon .popup-card .info .add-wish:hover{
+.seriesClass .popup-card .info .add-wish:hover{
   color: #c03f3f;
   font-size: 14px;
   text-align: center;
@@ -1089,14 +1090,14 @@ section#cards h2{
 
 /* Responsividade do card de detalhes*/
 
-@media (max-width: 900px){
-  .pokemon .popup-card{
+@media (max-width: 600px){
+  .seriesClass .popup-card{
       flex-direction: column;
       width: 550px;
       height: auto;
   }
 
-  .pokemon-card .popup-card .pokemon-img{
+  .seriesClass-card .popup-card .seriesClass-img{
       z-index: 3;
       width: 100%;
       height: 200px;
@@ -1107,12 +1108,12 @@ section#cards h2{
 
   }
 
-  .pokemon .popup-card .pokemon-img img{
+  .seriesClass .popup-card .seriesClass-img img{
       left: initial;
       max-width: 100%;
   }
 
-  .pokemon .popup-card .info {
+  .seriesClass .popup-card .info {
       width: 100%;
       height: auto;
       padding: 20px;
@@ -1120,37 +1121,37 @@ section#cards h2{
       border-top-left-radius: 0;
   }
 
-  .pokemon .popup-card .info h2{
+  .seriesClass .popup-card .info h2{
       margin: 20px 5px 5px 5px;
       font-size: 25px;
   }
 
-  .pokemon .popup-card .info h2 span{
+  .seriesClass .popup-card .info h2 span{
       font-size: 10px;
   }
 
-  .pokemon .popup-card .info p{
+  .seriesClass .popup-card .info p{
       margin: 5px;
       font-size: 13px;
   }
 
-  .pokemon .popup-card .info .tipo{
+  .seriesClass .popup-card .info .tipo{
       margin: 5px;
       font-size: 30px;
   }
 
-  .pokemon .popup-card .info .add-cart-btn{
+  .seriesClass .popup-card .info .add-cart-btn{
       margin: 5px auto;
       padding: 5px 40px;
       font-size: 14px;
   }
 
-  .pokemon .popup-card .info .add-wish{
+  .seriesClass .popup-card .info .add-wish{
       font-size: 14px;
 
   }
 
-  .pokemon .popup-card .close-btn{
+  .seriesClass .popup-card .close-btn{
       z-index: 4;
 
   }
@@ -1158,9 +1159,7 @@ section#cards h2{
 }
 
 #greygrad {
-  /* background: rgb(186,186,186);
-  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%); */
-  background: rgb(140,139,139);
+background: rgb(140,139,139);
 background: linear-gradient(132deg, rgba(140,139,139,1) 3%, rgba(107,107,107,1) 10%, rgba(98,98,98,1) 22%, rgba(86,86,86,1) 41%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
 }
 

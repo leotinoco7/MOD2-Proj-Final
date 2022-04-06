@@ -11,18 +11,18 @@
         <% series_.forEach((serie) => { %> 
 
                     <div class="container"> 
-                        <div class="pokemon">
-                            <div class="pokemon-card">
+                        <div class="seriesClass">
+                            <div class="seriesClass-card">
                                 <h2 class="name"><%= serie.title%></h2>
                                 <a href="#" class="popup-btn">Detalhes</a>
-                                <img src="<%= serie.image%>" alt="" class="pokemon-img">
+                                <img src="<%= serie.image%>" alt="" class="seriesClass-img">
                             </div>
                             <!-- segundo card que abre como popup com detalhes dos pokemons -->
                             <div class="popup-view">
                                 <div class="popup-card">
                                     <a> <i class="fas fa-times close-btn"></i></a>
-                                    <div class="pokemon-img">
-                                        <img src="<%= serie.image%>" alt="" class="pokemon-img">
+                                    <div class="seriesClass-img">
+                                        <img src="<%= serie.image%>" alt="" class="seriesClass-img">
                                     </div>
                                     <div class="info">
                                         <h2 id="name-info"> <%= serie.title%> <br></h2>
