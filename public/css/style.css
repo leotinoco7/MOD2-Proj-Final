@@ -88,8 +88,13 @@ nav ul li:hover {
     height: 100%;
     background-image: linear-gradient(
       178.2deg,
+<<<<<<< HEAD
       rgb(114, 114, 114) 10.9%,
       rgb(105, 105, 105) 62.6%
+=======
+      rgb(83, 83, 83) 10.9%,
+      rgb(75, 75, 75) 62.6%
+>>>>>>> 24bdf786fd724a67a943205608f82249bb3a1d22
     );
     top: 80px;
     left: -100%;
@@ -457,13 +462,13 @@ button:focus {
   transform-origin: left;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
   :root {
     --card-width: 250px;
     --card-height: 400px;
   }
 }
-.support {
+/* .support {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -479,7 +484,7 @@ button:focus {
 }
 .support a:hover {
   transform: scale(1.1);
-}
+} */
 
 footer {
   width: 100%;

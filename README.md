@@ -2,7 +2,7 @@
 
 Sejam bem-vindos ao nosso catálogo de filmes e séries. <br>
 
-Aqui você faz parte da equipe. Você pode manusear todos os dados de nosso site, adicionar, deletar e atualizar os títulos que você quiser.
+O site funciona como uma to watch list, aonde você pode cadastrar séries, filmes e livros, além de poder editar e deletar da maneira que você quiser.
 
 ## 👀 Vizualização
 
@@ -27,12 +27,26 @@ Para visualização em servidor local:
 npm run dev
 ```
 
+## 🛒 Futuras implementações:
+
+* Login via google
+* Marcação de episódios/séries já assistidas (com a opção de adicionar uma avaliação)
+* API de séries com todos os dados
+* Opção de adicionar temporadas
+* Alerta de novos episódios/temporadas
+das suas séries
+* APP Mobile
+* Área de Favoritos
 
 ## 🛠️ Construído com
 
-* Engine - [NodeJs](https://nodejs.org/en/docs/)
-* FrameWork - [Express](https://expressjs.com/pt-br/guide/routing.html)
-* Db - [PostgreSQL](https://www.postgresql.org/docs/)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) - Engine
+* ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) - FrameWork
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) - DB
+
+## 📖Fluxograma (clique para aumentar)
+
+<img src="https://github.com/leotinoco7/MOD2-Proj-Final/blob/main/public/img/Projeto%20final%20mod%202.jpg?raw=true">
 
 ## ✒️ Autores
 
