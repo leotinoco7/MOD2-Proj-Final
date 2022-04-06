@@ -990,12 +990,10 @@ section#cards h2{
   border-radius: 10px;
 }
 
-/* .seriesClass .popup-card .seriesClass-img img{
+.seriesClass .popup-card .seriesClass-img img{
   z-index: 2;
   position: relative;
-  width: 450px;
-  left: -50px;
-} */
+}
 
 .seriesClass .popup-card .info{
   z-index: 2;
