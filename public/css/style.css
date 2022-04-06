@@ -94,6 +94,7 @@ nav ul li:hover {
     display: block;
     transition: all 0.5s;
     justify-content: center;
+    z-index: 200;
   }
   nav ul li {
     margin: 50px;
@@ -486,7 +487,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 50%;
+  min-width: 380px;
 }
 
 footer p {
