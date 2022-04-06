@@ -13,27 +13,27 @@ const getAll = async (req, res) => {
     }, 1000)
     const series_ = await Series.findAll();
 
-    currentRandom = [Math.floor(Math.random() * series_.length)];
+    currentRandom = Math.floor(Math.random() * series_.length);
 
-    currentRS = series_[currentRandom];
+currentRS = series_[currentRandom];
 
-    do{
-      var previusRandom = [Math.floor(Math.random() * series_.length)];
-      if(previusRandom != currentRandom){
-        break;
-      }
-    }while(true);
-    
-    previusRS = series_[previusRandom]
+do{
+  var previusRandom = Math.floor(Math.random() * series_.length);
+  if(previusRandom != currentRandom){
+    break;
+  }
+}while(true);
 
-    do{
-      var nextRandom = [Math.floor(Math.random() * series_.length)];
-      if(nextRandom != currentRandom && nextRandom != previusRandom){
-        break;
-      }
-    }while(true);
+previusRS = series_[previusRandom]
 
-    nextRS = series_[nextRandom]
+do{
+  var nextRandom = Math.floor(Math.random() * series_.length);
+  if(nextRandom != currentRandom && nextRandom != previusRandom){
+    break;
+  }
+}while(true);
+
+nextRS = series_[nextRandom]
 
 
     res.render("index", { series_, currentRS, previusRS, nextRS, message, type });

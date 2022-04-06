@@ -5,6 +5,7 @@
 </head>
 
     <body>
+        <div id="greygrad">
         <%- include('./components/navbar') %>
         <section id="lists">
         <% series_.forEach((serie) => { %> 
@@ -26,6 +27,7 @@
                                     <div class="info">
                                         <h2 id="name-info"> <%= serie.title%> <br></h2>
                                         <span class="tipo"> Ano Lançamento: <%= serie.year%> </span>
+                                        <p> Genero: <%= serie.genre%></p>
                                         <p><%=serie.description%></p>
                                     
                                         <!-- botões para editar e deletar um card -->
@@ -54,7 +56,7 @@
 
     </section>
         <%- include('./components/footer') %>
-
+    </div>
     </body>
 
     <script src="/js/scriptModal.js"></script>

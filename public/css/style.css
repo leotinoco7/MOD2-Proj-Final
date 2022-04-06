@@ -14,7 +14,7 @@
 }
 
 * {
-  font-family: amazonember;
+  font-family: "Montserrat";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ body {
   background: rgba(0, 0, 0, 0.787);
   flex-direction: column;
   min-width: 380px;
-
+  min-height: 650px;
 }
 
 nav {
@@ -35,11 +35,13 @@ nav {
   width: 100%;
   text-align: center;
   min-width: 380px;
+  text-shadow: 5px 2px 5px rgb(0, 0, 0);
 }
 
 nav ul {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
   list-style: none;
   justify-content: space-evenly;
 }
@@ -49,17 +51,22 @@ nav ul li {
   padding: 0.8rem;
   display: flex;
   align-items: center;
+  
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
   text-align: center;
+  display: flex;
+  transition: 0.6s ease-in-out;
 }
 
-nav ul li:hover {
-  background-color: rgb(128, 128, 128);
+nav ul li a:hover {
+  color: rgb(177, 171, 115);
+ 
 }
+
 
 .checkbtn {
   font-size: 30px;
@@ -150,6 +157,20 @@ section#cadastro form textarea{
   min-width: 350px;
   width: 100%;
   
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px #ccc;
+  margin: 0rem 0.6rem 0.6rem 0rem;
+  border-radius: 3px 20px ;
+  background-color: rgb(173, 173, 173);
+  flex-direction: column;
+  display: flex;
+}
+
+.item #select{
+  min-width: 350px;
+  width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   outline: none;
@@ -770,18 +791,6 @@ section#lists div.list img {
   height: 10rem;
 }
 
-/* section#lists div.list h2 {
-}
-
-section#lists div.list p {
-}
-
-a, a:hover, a:visited {
-  text-decoration: none;
-} */
-
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -822,8 +831,6 @@ a, a:hover, a:visited {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
 
 section#cards{
   display: flex;
@@ -1161,4 +1168,25 @@ section#cards h2{
 
 }
 
+#greygrad {
+  background: rgb(186,186,186);
+  background: linear-gradient(132deg, rgba(186,186,186,1) 8%, rgba(138,138,138,1) 21%, rgba(98,98,98,1) 42%, rgba(84,84,84,1) 58%, rgba(66,66,66,1) 71%, rgba(48,48,48,1) 87%);
+}
+
+.message {
+  padding: 1.5rem;
+  background-color: rgb(11, 207, 139);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
