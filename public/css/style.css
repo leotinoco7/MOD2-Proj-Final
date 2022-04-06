@@ -34,6 +34,7 @@ nav {
   background: rgba(255, 255, 255, 10.5%);
   width: 100%;
   text-align: center;
+  min-width: 380px;
 }
 
 nav ul {
@@ -88,12 +89,12 @@ nav ul li:hover {
       rgb(114, 114, 114) 10.9%,
       rgb(105, 105, 105) 62.6%
     );
-    top: 80px;
     left: -100%;
     text-align: center;
     display: block;
     transition: all 0.5s;
     justify-content: center;
+    z-index: 200;
   }
   nav ul li {
     margin: 50px;
@@ -486,7 +487,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 50%;
+  min-width: 380px;
 }
 
 footer p {
