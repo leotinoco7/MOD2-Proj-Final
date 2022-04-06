@@ -26,17 +26,14 @@ body {
   display: flex;
   background: rgba(0, 0, 0, 0.787);
   flex-direction: column;
-  min-width: 65%;
+  min-width: 380px;
 
 }
 
 nav {
-  position: fixed;
-  z-index: 9999;
   background: rgba(255, 255, 255, 10.5%);
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 nav ul {
